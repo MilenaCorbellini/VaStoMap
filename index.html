@@ -5,16 +5,16 @@
 <head>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<link rel="stylesheet" href="//code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
 <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
-<link rel="stylesheet" href="//unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
-<script src="//unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
-<link href="//fonts.googleapis.com/icon?family=Material+Icons"
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-<script src="//unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>     
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>     
 <script src="js/leaflet.awesome-markers.js"></script>
-<script src="//kit.fontawesome.com/0a382d656e.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0a382d656e.js" crossorigin="anonymous"></script>
    <style>
        #mapid { position:absolute; top:0; bottom:0; left:0; right:0; }
        .marker-pin {
@@ -126,7 +126,7 @@
         
     });
    
-
+/*
  
  
     var church_x = L.marker([43.7725122,11.4828408,14], {icon: icon}).bindPopup("<img src='/m_imgs/S_Girolamo.jpg' width='150px' height='100px'/><br><b>Monastero di San Girolamo</b><br> Oggi Caserma Cesare De Laugier <br><br> <a href='https://it.wikipedia.org/wiki/Castello_d%27Altafronte' target='_blank'><i class='fas fa-info-circle'></i></a><br> <i style= 'backgound_color:lightgray;'> pagina 706</i><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=fol_701&s=Proemio&e=diplomatic&ce=critical' target='_blank'><i><i class='fas fa-book-reader'></i></i></a> " );  
@@ -176,7 +176,6 @@
 
 
 var overlayMaps = {
-
     "castelli <i class='fas fa-place-of-worship'></i>":castels
 
 };
@@ -198,6 +197,80 @@ L.control.layers(null, overlayMaps, {"autoZIndex": true, "collapsed": false, "po
 var osm=new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(mymap);
 
     L.Control.geocoder().addTo(mymap);
+*/
+var church_x = L.marker([43.7725122,11.4828408,14], {icon: icon}).bindPopup("<img src='m_imgs/S_Girolamo.jpg' width='150px' height='100px'/><br><b>Monastero di San Girolamo</b><br> Oggi Caserma Cesare De Laugier <br><br> <a href='https://commons.wikimedia.org/wiki/Category:San_Girolamo_delle_Poverine_Ingesuate?uselang=it' target='_blank'><i class='fas fa-info-circle'></i></a><br> <i style= 'backgound_color:lightgray;'> pagina 706</i><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=fol_701&s=Proemio&e=diplomatic&ce=critical' target='_blank'><i><i class='fas fa-book-reader'></i></i></a> " );  
+    var church_y = L.marker([43.77071, 11.25502], {icon: icon}).bindPopup("<img src='m_imgs/SanMichele.jpg' width='150px' height='100px'/><br><b>Chiesa di San Michele in Orto</b><br> Oggi Chiesa di Orsanmichele. <br> <br> <a href='https://dbpedia.org/page/Orsanmichele' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 684</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_684&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> " );
+     
+    var church_z =L.marker([43.7753, 11.26015], {icon: icon}).bindPopup("<img src='m_imgs/Rotonda.jpg' width='150px' height='100px'/><br><b>Santa Maria Ritonda</b><br> Oggi Rotonda del Brunelleschi. <br><br> <a href='https://commons.wikimedia.org/wiki/Category:Brunelleschi%27s_Rotunda?uselang=it' target='_blank'><i class='fas fa-info-circle'></i></a><br><i>pagina 690</i><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_690&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>;<br> pagina 697</i><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_697&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>;<br> pagina 701</i><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_701&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>;<br> pagina 702</i><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_702&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> " );
+    var church_a =L.marker([43.76921,11.25214], {icon: icon}).bindPopup("<img src='m_imgs/Santi_Apostoli.jpg' width='150px' height='100px'/><br><b>Santo Apostolo</b> <br> Oggi Santi Apostoli. <br> <br> <a href='https://dbpedia.org/page/Santi_Apostoli,_Florence' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 697</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_697&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> " );
+    
+    var church_b = L.marker([43.7677365,11.2520177], {icon: icon}).bindPopup("<img src='m_imgs/San_Jacopo.jpg' width='150px' height='100px'/><br><b>Chiesa di San Jacopo Soprarno</b><br> <br> <a href='https://dbpedia.org/page/San_Jacopo_sopr%27Arno' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 697</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_697&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> " );
+    var church_h = L.marker([43.7746346,11.2493859,15], {icon: icon}).bindPopup("<img src='m_imgs/SMaria_Nov.jpg' width='150px' height='100px'/><br><b>Chiesa di Santa Maria Novella</b><br><br> <a href='https://dbpedia.org/page/Santa_Maria_Novella' target='_blank'><i class='fas fa-info-circle'></i></a><br> <i> pagina 701</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_701&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>  " );
+    var church_d = L.marker([43.7649448,11.2478774], {icon: icon}).bindPopup("<img src='m_imgs/San_felice.jpg' width='150px' height='100px'/><br><b>Chiesa di San Felice in Piazza</b><br><br> <a href='https://dbpedia.org/page/San_Felice,_Florence' target='_blank'><i class='fas fa-info-circle'></i></a><br> <i> pagina 684</i><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_684&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> " ); 
+     
+
+ 
+    var church_f = L.marker([43.7720656,11.2513904,13], {icon: icon}).bindPopup("<img src='m_imgs/SanSalvi.jpg' width='150px' height='100px'/><br><b>Monastero di San Salvi</b><br><br> <a href='https://dbpedia.org/page/San_Salvi' target='_blank'><i class='fas fa-info-circle'></i></a><br> <i> pagina 702</i><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_702&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>; pagina 704</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_704&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>  " ); 
+     
+    
+
+
+
+    var castel = L.marker([43.7677337,11.2559032,15], {icon:palace}).bindPopup("<img src='m_imgs/Museo_Galileo.jpg' width='150px' height='100px'/><br><br><b>Castello d'Altafronte</b><br>Oggi Museo Galileo<br> <a href='https://dbpedia.org/page/Museo_Galileo' target='_blank'><i class='fas fa-info-circle'></i></a><br>  <i> pagina 699</i><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_699&s=Proemio&e=diplomatic&ce=critical' target='_new'><br> <i><i class='fas fa-book-reader'></i></i></a> ");
+
+  
+    var space_a = L.marker([43.76895, 11.26057], {icon: vuoto}).bindPopup("<img src='m_imgs/Santa_croce.jpg' width='150px' height='100px'/><br><b>Piazza Santa Croce</b><br><br> <a href='https://dbpedia.org/page/Piazza_Santa_Croce' target='_blank'><i class='fas fa-info-circle'></i></a><br> <i> pagina 701</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_701&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> " );
+    var space_b = L.marker([43.77626, 11.25174], {icon: vuoto}).bindPopup("<img src='m_imgs/San_Jacopo_Corbolini.jpg' width='150px' height='100px'/><br><b>Campo Corbolini</b><br> Oggi Chiesa di San Jacopo in Campo Corbolini<br><br><a href='https://viaf.org/viaf/135090114/' target='_blank'><i class='fas fa-info-circle'></i></a><br> <i> pagina 697</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_697&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> " );
+    var church_c = L.marker([43.7689301,11.2562839,15], {icon:icon}).bindPopup("<img src='m_imgs/San_Pietro.jpg' width='150px' height='100px'/><br><b>Chiesa di San Piero Scheraggio</b><br> <br> <a href='https://viaf.org/viaf/159816223/' target='_blank'><i class='fas fa-info-circle'></i></a><br> <i> pagina 699</i><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_699&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> " );
+    var space_c =L.marker([43.7650644,11.2954318], {icon: vuoto}).bindPopup("<img src='m_imgs/Rovezzano.jpg' width='150px' height='100px'/><br><b>Rovezzano</b><br> <br> <a href='https://commons.wikimedia.org/wiki/Category:Rovezzano?uselang=it' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 704</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_704&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>  ");
+    var bridge_a =L.marker([43.7661583,11.2587278], {icon: bridge}).bindPopup("<img src='m_imgs/Ponte3.jpg' width='150px' height='100px'/><br><b>Ponte Rubaconte</b> <br> Oggi Ponte Alle Grazie<br> <br> <a href='https://dbpedia.org/page/Ponte_alle_Grazie' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 684</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_684&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>; pagina 700</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_700&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>; pagina 702</i> <br></i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_702&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> " );
+    var bridge_b =L.marker([43.76802,11.25315], {icon: bridge}).bindPopup("<img src='m_imgs/Ponte2.jpg' width='150px' height='100px'/><br><b>Ponte Vecchio</b><br><br> <a href='https://dbpedia.org/page/Ponte_Vecchio' target='_blank'><i class='fas fa-info-circle'></i></a><br> <i> pagina 684</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_684&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>; pagina 700</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_700&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>; pagina 702</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_702&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> " );
+    var bridge_c =L.marker([43.7702355,11.2473074,15], {icon: bridge}).bindPopup("<img src='m_imgs/Ponte1.jpg' width='150px' height='100px'/><br><b>Ponte alla Carraia</b><br><br> <a href='https://dbpedia.org/page/Ponte_alla_Carraia' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 697</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_697&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> ");
+    var door_c =L.marker([43.7696014,11.2534641,15], {icon: porta}).bindPopup("<img src='m_imgs/Porta_al_Prato.jpg' width='150px' height='100px'/><br><b>Porta al Prato</b><br><br> <a href='https://viaf.org/viaf/236154843/' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 701</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_701&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>; pagina 706</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_706&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>  ");
+    var door_d =L.marker([43.7837101,11.259546,17], {icon: porta}).bindPopup("<img src='m_imgs/San_Gallo.jpg' width='150px' height='100px'/><br><b>Porta San Gallo</b><br><br> <a href='https://viaf.org/viaf/235263547/' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 706</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_706&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>  ");
+    var unspace =L.marker([43.76681915131317, 11.26871568873621], {icon: unp}).bindPopup("<img src='m_imgs/porta_di_giustizia.jpg' width='150px' height='100px'/><br><b>Porta alla Giustizia</b><br> Originariamente posta all'inizio di Via dei Malcontenti, oggi non più esistente <br><br> <a href='' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 684</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_684&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> " );
+    var unspace_a =L.marker([43.7674468,11.2573619,19], {icon: unp}).bindPopup("<img src='m_imgs/Piazza_mentana.jpg' width='150px' height='100px'/><br><b>Porticciula d'Arno</b><br> Originariamente posta all'inizio dell'attuale Piazza Mentana, oggi non più esistente<br><br> <a href='https://www.wikidata.org/wiki/Q3902259' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 701</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_701&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>; pagina 702</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_702&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>; pagina 703</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_703&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>  " );
+    var ponte_f =L.marker([43.76477, 11.27104], {icon: bridge}).bindPopup("<img src='m_imgs/Ponte_san_niccolò.jpg' width='150px' height='100px'/><br><b>Ponte Reale</b><br> Oggi ricostruito come Ponte San Niccolò<br> <a href='https://www.wikidata.org/wiki/Q522633' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 701</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_701&s=Proemio&e=diplomatic&ce=critical' target='_new'><i class='fas fa-book-reader'></i></a>  ");
+    var door_g =L.marker([43.7708561,11.2353969,17], {icon: porta}).bindPopup("<img src='m_imgs/San_Ferdiano.jpg' width='150px' height='100px'/><br><b>Porta San Frediano</b><br><br> <a href='https://viaf.org/viaf/246999895/' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 701</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_701&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> ");
+    var door_a =L.marker([43.7644805,11.2648448,17], {icon: porta}).bindPopup("<img src='m_imgs/Porta_san_niccolò.jpg' width='150px' height='100px'/><br><b>Porta San Niccolò</b><br><br> <a href='https://dbpedia.org/page/Tower_of_San_Niccol%C3%B2,_Florence' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 702</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_702&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a> "); 
+    var mura =L.marker([43.7638336,11.2596796,17], {icon: porta}).bindPopup("<img src='m_imgs/Mura_san_niccolò.jpg' width='150px' height='100px'/><br><b>Mura di San Niccolò</b><br><br> <a href='' target='_blank'><i class='fas fa-info-circle'></i></a><br><i> pagina 704</i><br><a href='https://milenacorbellini.github.io/VaSto_master/evt2beta2/index.html#/imgTxt?d=Storia_Fiorentina&p=p_704&s=Proemio&e=diplomatic&ce=critical' target='_new'><i><i class='fas fa-book-reader'></i></i></a>"); 
+    
+    var churches = L.layerGroup([church_x, church_y, church_z, church_h, church_a, church_b, church_d, church_f, church_c ]);   
+    var castels = L.layerGroup([castel]);
+    var doors = L.layerGroup([door_c, door_d, door_g, door_a, mura]);
+    var spaces = L.layerGroup([space_a, space_b, space_c ]);
+    var bridges = L.layerGroup([bridge_a, bridge_b, bridge_c, ponte_f]);
+    var unplaces = L.layerGroup([unspace, unspace_a]);
+
+
+	var mbAttr = 'Map data &copy; <a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> ',
+		mbUrl = 'https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=5phxNvLIOj3VzYvgtSHl';
+
+	var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+	var map = L.map('mapid', {
+		center: [43.7661,11.2594],
+		zoom: 14,
+		layers: [grayscale, churches,castels, doors, spaces, bridges, unplaces]
+	});
+
+	var baseLayers = {
+		"Grayscale": grayscale,
+		"Streets": streets
+	};
+
+	var overlays = {
+    "chiese <i class='fas fa-place-of-worship'></i>":churches,
+    "castelli <i class='fas fa-place-of-worship'></i>":castels,
+    "porte <i class='fas fa-place-of-worship'></i>":doors,
+    "spazi <i class='fas fa-place-of-worship'></i>":spaces,
+    "ponti <i class='fas fa-place-of-worship'></i>":bridges,
+    "non spazi <i class='fas fa-place-of-worship'></i>":unplaces,
+    
+	};
+
+	L.control.layers(null, overlays).addTo(map);
 
 
     </script>
