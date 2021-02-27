@@ -270,6 +270,9 @@ var church_x = L.marker([43.7725122,11.4828408,14], {icon: icon}).bindPopup("<im
 	};
 
 	L.control.layers(null, overlays).addTo(map);
+    var osm=new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(mymap);
+
+    L.Control.geocoder().addTo(mymap);
 
 
     </script>
